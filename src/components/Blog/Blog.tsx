@@ -7,6 +7,14 @@ const BlogPage = () => {
 
   const blogData = data?.data;
 
+  if (isLoading) {
+    return (
+      <div className="flex justify-center my-20 text-success">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="max-w-[1440px] mx-auto px-5 my-20">
