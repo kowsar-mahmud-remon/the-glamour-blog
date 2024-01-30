@@ -1,6 +1,6 @@
 import { api } from "../../api/apiSlice";
 
-const bikeApi = api.injectEndpoints({
+const blogApi = api.injectEndpoints({
   endpoints: (build) => ({
     getAllBlogs: build.query({
       query: () => "/blog",
@@ -42,9 +42,9 @@ const bikeApi = api.injectEndpoints({
 });
 
 export const {
-  useGetAllBikesQuery,
-  useGetSingleBikeQuery,
-  useCreateBikeMutation,
-  useDeleteBikeMutation,
-  useUpdateBikeMutation,
-} = bikeApi;
+  useGetAllBlogsQuery,
+  useGetSingleBlogQuery,
+  useCreateBlogMutation,
+  useDeleteBlogMutation,
+  useUpdateBlogMutation,
+} = blogApi;
